@@ -1,10 +1,5 @@
-<!-- Button trigger modal
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button> -->
-
 <!-- Modal -->
-<div class="modal fade" id="modalProduto" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="modalProduct" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -20,11 +15,17 @@
               <label for="descricao">Descrição</label>
               <input type="text" class="form-control" id="descricao" placeholder="Descrição">
             </div>
-            <div class="form-group col-md-9">
-              <label for="inputAnimal">Animal</label>
-              <input type="text" class="form-control" id="inputAnimal" placeholder="Animal">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Animal
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>Boi</li>
+                <li>Porco</li>
+                <li>Frango</li>
+              </ul>
             </div>
-          </div>         
+          </div>
         </form>
       </div>
       <div class="modal-footer">
